@@ -31,9 +31,6 @@ let map = L.map('mapid', {
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
 
-// Accessing the neighborhood GeoJSON URL
-let earthquakes = "https://raw.githubusercontent.com/amylio/Mapping_Earthquakes/Mapping_GeoJSON_Polygons/torontoNeighborhoods.json";
-
 // Retrieve the earthquake GeoJSON data.
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(function(data) {
   // This function returns the style data for each of the earthquakes we plot on
@@ -93,5 +90,8 @@ style: styleInfo,
   //  location of the earthquake after the marker has been created and styled.
   onEachFeature: function(feature, layer) {
   layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
-}
-}).addTo(map);
+  }
+    }).addTo(map);
+
+  });
+
