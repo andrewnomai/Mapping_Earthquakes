@@ -1,1 +1,4 @@
 # Mapping_Earthquakes
+
+## Objective and Task
+The objective of this project is to build insightful data visualizations with interactive features on earthquakes from around the world. Our task is to support website and mobile application development by using the latest earthquake GeoJSON data from the U.S. Geological Survey website. We will traverse and retrieve the earthquake data using javascript and the D3 and leaflet libraries and plot the data on a Mapbox map through an API request. On our map, the magnitude and location of each earthquake will be shown in a popup marker, in which the diameter of each marker should reflect the magnitude of the earthquake in their size and color. Earthquakes i nhigh magnitudes will appear larger and darker in color with a legend providing the context for the data. We will also illustrate the relationship between the location and frequency of seismic activity and tectonic plates, we are to add fault lines on the map. 
